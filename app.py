@@ -16,8 +16,8 @@ app = Flask(__name__)
 CORS(app)
 
 # AWS Configuration from Environment Variables
-aws_access_key_id = os.getenv('AKIARJWCF5SOOCJBZKO6')
-aws_secret_access_key = os.getenv('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')
+aws_access_key_id = os.getenv('AWS_ACCESS_KEY_ID')
+aws_secret_access_key = os.getenv('AWS_SECRET_ACCESS_KEY')
 region_name = os.getenv('AWS_REGION', 'ap-south-1')
 bucket_name = os.getenv('BUCKET_NAME', 'cccpbucket1')
 
